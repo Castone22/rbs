@@ -1,6 +1,8 @@
 require "test_helper"
 
 class RBS::EnvironmentLoaderTest < Minitest::Test
+  include TestHelper
+
   Environment = RBS::Environment
   EnvironmentLoader = RBS::EnvironmentLoader
   Declarations = RBS::AST::Declarations
