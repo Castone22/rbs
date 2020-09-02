@@ -218,7 +218,6 @@ singleton(::BasicObject)
           cli.run(%w(vendor --vendor-dir=dir1 --stdlib))
 
           assert_operator Pathname(d) + "dir1/stdlib", :directory?
-          assert_operator Pathname(d) + "dir1/gems", :directory?
         end
       end
     end
