@@ -3,6 +3,8 @@ require "stringio"
 require "rbs/cli"
 
 class RBS::CliTest < Minitest::Test
+  include TestHelper
+
   CLI = RBS::CLI
 
   def stdout
