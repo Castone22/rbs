@@ -65,6 +65,8 @@ end
   end
 
   def test_loading_gem
+    skip unless has_gem?("racc")
+
     with_signatures do |path|
       loader = EnvironmentLoader.new()
 
@@ -82,6 +84,8 @@ end
   end
 
   def test_loading_unknown_library
+    skip unless has_gem?("racc")
+
     with_signatures do |path|
       loader = EnvironmentLoader.new()
 
